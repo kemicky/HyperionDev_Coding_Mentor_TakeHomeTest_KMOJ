@@ -21,6 +21,7 @@ class Anagram:
 
 if __name__ == '__main__':
     # taking user input for number of words or phrases and error handling.
+    
     while True:
         u = int(input("Enter number of words or phrases you wish to check the anagram: " + "\n"))
         if u < 0 or u == 0:
@@ -38,7 +39,7 @@ if __name__ == '__main__':
                 # error handling for empty string.
              if not strs[i] or strs[i].strip() == "" :
                  print("Input cannot be empty.")
-                 print("Program terminated due to invalid input error, Restart the program to try again.")
+                 print("Python console app terminated due to invalid input error, Restart the program to try again.")
                  print("Thank you for using the program, Goodbye!" + "\n")
                  exit()
         else:
