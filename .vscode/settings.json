@@ -1,0 +1,27 @@
+{
+  "cSpell.ignoreWords": ["getfibonacci"],
+  "cmake.configureOnOpen": false,
+  "csharp-utilities.autoGenerateAssets": true,
+  "csharp.inlayHints.parameters.forIndexerParameters": true,
+  "csharp.inlayHints.parameters.forLiteralParameters": true,
+  "terminal.explorerKind": "both",
+  "debug.terminal.clearBeforeReusing": true,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "underline",
+  "editor.formatOnSave": true,
+  "standard.autoFixOnSave": true,
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.intellisense": "rubyLocate",
+  "ruby.pathToBundler": "",
+  "ruby.useLanguageServer": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "python.formatting.provider": "none",
+  "python.analysis.gotoDefinitionInStringLiteral": true,
+  "python.analysis.diagnosticSeverityOverrides": {
+  "reportMissingImports": "none"
+  }
+}

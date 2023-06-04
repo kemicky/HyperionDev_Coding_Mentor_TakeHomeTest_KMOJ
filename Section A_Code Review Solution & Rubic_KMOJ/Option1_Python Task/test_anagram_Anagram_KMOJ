@@ -1,0 +1,34 @@
+# Date: 2023-5-29
+# Author: Kemmy MO Jones.
+
+
+import unittest
+from Anagram import Anagram
+
+class TestAnagram(unittest.TestCase):
+    def setUp(self):
+        self.anagram = Anagram()
+
+    # Positive Test Case
+    def test_grouped_anagrams_positive(self):
+        input_strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+        expected_output = [["ate","eat","tea"],["nat","tan"],["bat"]]
+        self.assertEqual(self.anagram.grouped_anagrams(input_strs), expected_output)
+
+    # Negative Test Case
+    def test_grouped_anagrams_negative(self):
+        input_strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+        expected_output = [["ate","eat","tea"],["nat","tan"]]
+        self.assertNotEqual(self.anagram.grouped_anagrams(input_strs), expected_output)
+
+    # Error Test Case
+    def test_grouped_anagrams_error(self):
+        input_strs = None
+        with self.assertRaises(TypeError):
+            self.anagram.grouped_anagrams(input_strs)
+
+    # Edge Test Case
+    def test_grouped_anagrams_edge(self):
+        input_strs = []
+        expected_output = []
+        self.assertEqual(self.anagram.grouped_anagrams(input_strs), expected_output)

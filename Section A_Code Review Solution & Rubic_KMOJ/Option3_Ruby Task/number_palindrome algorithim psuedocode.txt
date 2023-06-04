@@ -1,0 +1,45 @@
+// Author: Kemmy MO Jones
+// Date: 10/5/2023
+// Description: This is the pseudocode algorithm to check if a number is a palindrome  or not.
+// Programing Language: Ruby
+
+BEGIN
+OUTPUT "Enter any number: "
+INPUT num
+
+// Local variable
+NUMBER num, temp, sum
+temp = num
+sum = 0
+
+// Check the stored sum result if it is a palidrome number or not
+IF (num < 0) THEN
+   OUTPUT  "#{num} is a either a negative number or zero, please enter a positive number"
+   EXIT program
+END IF
+
+// Implement while loop to check the number num is not equal to zero
+WHILE (num != 0)
+// find the modulo of the number num
+   rem = num % 10
+   num = num / 10
+// Calclate the sum of the number and store the result of the sum to the output
+   sum = sum + sum * 10 + rem
+
+// Check the stored sum result if it is a palidrome number or not
+IF (temp == sum) THEN
+    OUTPUT  "The #{temp} is a palidrome number"
+ELSE
+    OUTPUT "The #{temp} is not a palidrome number"
+END IF
+END
+
+
+
+
+
+
+
+
+
+

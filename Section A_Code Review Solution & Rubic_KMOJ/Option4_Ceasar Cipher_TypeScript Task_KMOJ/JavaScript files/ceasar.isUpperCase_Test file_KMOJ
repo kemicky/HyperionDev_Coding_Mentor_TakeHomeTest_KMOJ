@@ -1,0 +1,65 @@
+// Date: 2023-5-10
+// Author: Kemmy MO Jones.
+// JavaScript
+
+
+// POSITIVE TEST CASES
+describe('isUpperCase function - Positive Test Cases', () => {
+  test('should return true for uppercase string', () => {
+    expect(isUpperCase('HELLO')).toBe(true);
+  });
+  
+  test('should return false for lowercase string', () => {
+    expect(isUpperCase('hello')).toBe(false);
+  });
+  
+  test('should return false for mixed case string', () => {
+    expect(isUpperCase('HeLLo')).toBe(false);
+  });
+  
+  test('should return true for empty string', () => {
+    expect(isUpperCase('')).toBe(true);
+  });
+});
+
+// NEGATIVE TEST CASES
+describe('isUpperCase function - Negative Test Cases', () => {
+  test('should return false for null input', () => {
+    expect(isUpperCase(null)).toBe(false);
+  });
+  
+  test('should return false for undefined input', () => {
+    expect(isUpperCase(undefined)).toBe(false);
+  });
+  
+  test('should return false for number input', () => {
+    expect(isUpperCase(123)).toBe(false);
+  });
+  
+  test('should return false for boolean input', () => {
+    expect(isUpperCase(true)).toBe(false);
+  });
+  
+  test('should return false for object input', () => {
+    expect(isUpperCase({})).toBe(false);
+  });
+});
+
+// EDGE TEST CASES
+describe('isUpperCase function - Edge Test Cases', () => {
+  test('should return true for single uppercase character', () => {
+    expect(isUpperCase('A')).toBe(true);
+  });
+  
+  test('should return false for single lowercase character', () => {
+    expect(isUpperCase('a')).toBe(false);
+  });
+  
+  test('should return true for string with only uppercase characters', () => {
+    expect(isUpperCase('HELLO')).toBe(true);
+  });
+  
+  test('should return false for string with only lowercase characters', () => {
+    expect(isUpperCase('hello')).toBe(false);
+  });
+});

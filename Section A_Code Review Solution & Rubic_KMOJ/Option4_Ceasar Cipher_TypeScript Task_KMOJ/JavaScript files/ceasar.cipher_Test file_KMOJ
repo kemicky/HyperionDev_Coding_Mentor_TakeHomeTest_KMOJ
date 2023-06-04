@@ -1,0 +1,28 @@
+// Date: 2023-5-10
+// Author: Kemmy MO Jones.
+// JavaScript
+
+
+//Positive Test Case
+test('Positive Test Case - cipher', () => {
+  expect(cipher('hello', 3)).toBe('khoor');
+  expect(cipher('world', 5)).toBe('btwqi');
+});
+
+//Negative Test Case
+test('Negative Test Case - cipher', () => {
+  expect(cipher('hello', 3)).not.toBe('hello');
+  expect(cipher('world', 5)).not.toBe('world');
+});
+
+//Edge Test Case
+test('Edge Test Case - cipher', () => {
+  expect(cipher('', 3)).toBe('');
+  expect(cipher(' ', 5)).toBe(' ');
+});
+
+//Error Test Case
+test('Error Test Case - cipher', () => {
+  expect(() => cipher('hello', 'abc')).toThrow();
+  expect(() => cipher('world', null)).toThrow();
+});

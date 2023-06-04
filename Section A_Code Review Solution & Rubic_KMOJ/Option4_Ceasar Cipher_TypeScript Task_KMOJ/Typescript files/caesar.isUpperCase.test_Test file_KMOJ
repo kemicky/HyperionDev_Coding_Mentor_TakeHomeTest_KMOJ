@@ -1,0 +1,66 @@
+// Date: 2023-5-10
+// Author: KMOJ.
+// TypeScript
+
+
+
+import { isUpperCase } from './isUpperCase';
+
+describe('isUpperCase function', () => {
+  describe('Positive Test Cases', () => {
+    test('should return true for uppercase string', () => {
+      expect(isUpperCase('HELLO')).toBeTruthy();
+    });
+    test('should return false for lowercase string', () => {
+      expect(isUpperCase('hello')).toBeFalsy();
+    });
+    test('should return false for mixed case string', () => {
+      expect(isUpperCase('HeLLo')).toBeFalsy();
+    });
+    test('should return true for empty string', () => {
+      expect(isUpperCase('')).toBeTruthy();
+    });
+  });
+
+  describe('Negative Test Cases', () => {
+    test('should return false for null input', () => {
+      expect(isUpperCase(null)).toBeFalsy();
+    });
+    test('should return false for undefined input', () => {
+      expect(isUpperCase(undefined)).toBeFalsy();
+    });
+    test('should return false for number input', () => {
+      expect(isUpperCase(123)).toBeFalsy();
+    });
+    test('should return false for boolean input', () => {
+      expect(isUpperCase(true)).toBeFalsy();
+    });
+    test('should return false for object input', () => {
+      expect(isUpperCase({})).toBeFalsy();
+    });
+    test('should return false for array input', () => {
+      expect(isUpperCase([])).toBeFalsy();
+    });
+  });
+
+  describe('Error Test Cases', () => {
+    test('should throw error for non-string input', () => {
+      expect(() => isUpperCase(123)).toThrowError(TypeError);
+    });
+  });
+
+  describe('Edge Test Cases', () => {
+    test('should return true for single uppercase character', () => {
+      expect(isUpperCase('A')).toBeTruthy();
+    });
+    test('should return false for single lowercase character', () => {
+      expect(isUpperCase('a')).toBeFalsy();
+    });
+    test('should return true for string with only uppercase characters', () => {
+      expect(isUpperCase('ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBeTruthy();
+    });
+    test('should return false for string with only lowercase characters', () => {
+      expect(isUpperCase('abcdefghijklmnopqrstuvwxyz')).toBeFalsy();
+    });
+  });
+});

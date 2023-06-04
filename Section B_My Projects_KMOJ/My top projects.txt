@@ -1,0 +1,20 @@
+Projects by : Kemmy MO Jones
+Date: 10 May 2023
+
+My project github links:
+
+  1. ios native:
+  https://github.com/kemicky/ios-native-projects-for-beginners-MJ
+  see codes files here:
+   a.brick breaker game: https://drive.google.com/file/d/1x8WRvBg7QksEsVGcE-d2SY2092S0NSjx/view?usp=sharing
+   b.iCalc: https://drive.google.com/file/d/1VwM1tB6FwXr71B-44Yt63-kPgvN_JhYE/view?usp=sharing
+   c.LandmarkSA: https://drive.google.com/file/d/1pkLGdOJ9l8uMUaaXEs_Ly-MaUKG1h2dk/view?usp=sharing
+
+  2. Android native(java, published): https://github.com/kemicky/AerolyfQuizApp_Java_tutorial_Beginners
+
+  3. Android native(kotlin):
+  https://github.com/kemicky/How-To-Use-ActivityResult-API-To-Parse-Information-Between-3-Activities-In-Kotlin-Tutorial
+
+  4. 1-page website(published): https://github.com/kemicky/Hello_html
+
+  Please see the pinned reposotories on my profile: https://github.com/kemicky

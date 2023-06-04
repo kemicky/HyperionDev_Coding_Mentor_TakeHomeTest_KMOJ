@@ -1,0 +1,38 @@
+// Date: 2023-5-10
+// Author: KMOJ.
+// TypeScript 
+
+
+// Positive test case
+test('Cipher function should return the correct output for a given input', () => {
+  const input = 'Hello World';
+  const key = 3;
+  const expectedOutput = 'Khoor Zruog';
+  const output = cipher(input, key);
+  expect(output).toEqual(expectedOutput);
+});
+
+// Negative test case
+test('Cipher function should return an empty string if input is empty', () => {
+  const input = '';
+  const key = 3;
+  const expectedOutput = '';
+  const output = cipher(input, key);
+  expect(output).toEqual(expectedOutput);
+});
+
+// Error test case
+test('Cipher function should throw an error if key is not a number', () => {
+  const input = 'Hello World';
+  const key = '3';
+  expect(() => cipher(input, key)).toThrow('Key must be a number');
+});
+
+// Edge test case
+test('Cipher function should handle edge case of key being 0', () => {
+  const input = 'Hello World';
+  const key = 0;
+  const expectedOutput = 'Hello World';
+  const output = cipher(input, key);
+  expect(output).toEqual(expectedOutput);
+});
