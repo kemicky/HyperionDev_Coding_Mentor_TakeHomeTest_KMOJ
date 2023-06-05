@@ -5,8 +5,17 @@
 # Program Name: Number Palindrome
 # Program Description: This program checks whether a number is palindrome or not.
 
+puts "\n\tWelcome to MJ's Number Palindrome Console Application."
+puts "\t--------------------------------------------------------\n"
+puts "\tApp Name: Number Palidrome Console App."
+puts "\tApp Description: This program checks whether a number is palindrome or not."
+puts "\tProgrammer: Kemmy MO Jones " + "\n"
+puts "Application Instructions: "
+puts "Enter the number you want to check whether it is a palindrome or not."
+puts "If the number is a palindrome, the program will display a message saying the number is a palindrome."
+puts  "-----------------------------------------------------------------------------------------------------\n"
 
-# Task: Write a program to check whether a number is palindrome or not.
+# Display the program title
 # Prompt the user to enter the number
 puts "Enter any number:"
 
@@ -18,7 +27,18 @@ sum = 0
 
 # Check if the number is a valid, negative or zero
 if (num < 0)
-    puts "#{num} is a either a negative number or zero, please enter a positive number."
+
+    # Display Error message to user
+    puts "\n\tALERT: ERROR MESSAGE"
+    puts"\t------------------------" + "\n"
+
+    puts "#{num} is a either a negative number or zero, please enter a positive number." + "\n"
+    puts "\nApplication written in Ruby."
+    puts "Thanks for using MJ's Number Palindrome Console App, Goodbye!. "
+    puts "Application is terminating now....\n"
+    puts "------------------------------------------------------------------------------------------" + "\n"
+
+    # Exit the program
     exit
 end
 # While loop to loop through the number
@@ -29,12 +49,20 @@ while num != 0
 end
 
 # If condition to check whether the number is palindrome or not
+puts "\n\tOutput: "
+puts"\t-------" + "\n"
+
 if(temp == sum)
-    puts "The #{temp} is a palindrome."
+    puts "#{temp} is a palindrome."
 else
-    puts "The #{temp} is not a palindrome."
+    puts "#{temp} is not a palindrome."
 end
 
-
+# Inform user that program is ending and who created it.
+puts "\n\tYou have reached the end of the number palindrome console app. "
+puts "\tApplication written in Ruby."
+puts "\tThanks for using MJ's Number Palindrome Console App, Goodbye!. "
+puts "\tApplication successfully ended. " + "\n"
+puts "----------------------------------------------------------------------------------------------" + "\n"
 
 

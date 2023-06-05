@@ -36,7 +36,7 @@ public class recursion {
 
     public static void main(String[] args) {
 
-        System.out.println("\n\tWelcome to MJ's String Recursion & Number Fibonacci seriesConsole Application.");
+        System.out.println("\n\tWelcome to MJ's String Recursion & Number Fibonacci Series Console Application.");
         System.out.println("\t-------------------------------------------------------------------------------\n");
         System.out.println("\tApp Name: String Recursion & Number Fibonacci Series App.");
         System.out.println(
