@@ -109,8 +109,8 @@ rl.question('Enter a string: ', (str) =>
         // But if the original string does not end with a full stop, do not add the full stop to the encrypted string.
         //remove symbols and number from the string and check if the string ends with a full stop or not
 
-        console.log(`\n App output:`);
-        console.log(`------------`);
+        console.log(`\nOutput:`);
+        console.log(`-------`);
 
         //check if the original string ends with a full stop or not.
         // if the original string ends with a full stop, add the full stop to the encrypted string.
