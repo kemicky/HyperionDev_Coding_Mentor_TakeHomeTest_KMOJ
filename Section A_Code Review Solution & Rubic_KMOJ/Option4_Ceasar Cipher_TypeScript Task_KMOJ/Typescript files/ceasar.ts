@@ -63,15 +63,18 @@ rl.question('Enter a string: ', (str) =>
 
     //check if string is empty
     if (str == "" || str == null) {
-        console.log("\nError Message: Invalid input, Empty input string, please try again.")
+        console.log(`\nError Message:`);
+        console.log(`--------------`);
+        console.log("\nInvalid input, Empty input string, please try again.")
         console.log("Application Terminated.....")
         console.log("----------------------------------------------------------------------------------\n")
         process.exit(0);
     }
     //check if number is entered instead of a string
     if (!isNaN(parseInt(str))) {
-
-        console.log("\nError Message: Invalid input, You did not enter a string, please try again.")
+        console.log(`\nError Message:`);
+        console.log(`--------------`);
+        console.log("\nInvalid input, You did not enter a string, please try again.")
         console.log("Application Terminated.....")
         console.log("----------------------------------------------------------------------------------\n")
         process.exit(0);
@@ -83,14 +86,18 @@ rl.question('Enter a string: ', (str) =>
     {
         //check  if string and shoift number is empty or not
         if (shift == "") {
-            console.log("\nError Message: Invalid input, Shift number input can not be empty, please try again.\n")
+            console.log(`\nError Message:`);
+            console.log(`--------------`);
+            console.log("\nInvalid input, Shift number input can not be empty, please try again.\n")
             console.log("Application Terminated.....")
             console.log("----------------------------------------------------------------------------------\n")
             process.exit(0);
         }
         //check if shift number is a number or not
         if (isNaN(parseInt(shift))) {
-            console.log("\nError Message: Invalid input, You did not enter a number for the shift number, please try again.\n")
+            console.log(`\nError Message:`);
+            console.log(`--------------`);
+            console.log("\nInvalid input, You did not enter a number for the shift number, please try again.\n")
             console.log("Application Terminated.....")
             console.log("---------------------------------------------------------------------------------------------------\n")
             process.exit(0);
@@ -103,7 +110,7 @@ rl.question('Enter a string: ', (str) =>
         //remove symbols and number from the string and check if the string ends with a full stop or not
 
         console.log(`\n App output:`);
-        console.log(`--------------------`);
+        console.log(`------------`);
 
         //check if the original string ends with a full stop or not.
         // if the original string ends with a full stop, add the full stop to the encrypted string.
@@ -138,9 +145,5 @@ rl.question('Enter a string: ', (str) =>
 
 });
 
-// Error handling for the replace function.
-function replace(arg0: string): any
-{
-    throw new Error('Function not implemented.');
-}
+
 

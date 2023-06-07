@@ -58,7 +58,9 @@ let str = prompt('Enter a string or words: ');
 
 // check if the string is empty or null and exit program
 if (str == null || str == " " || str.length == 0) {
-  console.log("Error Message: String or words cannot be parsed or empty");
+  console.log(`\nError Message:`);
+  console.log(`---------------\n`);
+  console.log("String or words cannot be parsed or empty");
   console.log("\nYou've reached the end of the program, Goodbye.!")
   console.log("Program written in Javascript.")
   console.log("Exiting program now...")
@@ -69,7 +71,9 @@ if (str == null || str == " " || str.length == 0) {
 
 //check if the string contains numbers, only letters, strings and words are allowed
 if (str.match(/[0-9]/i)) {
-  console.log("Error Message: String or words cannot contain numbers, only letters, strings and words are allowed");
+  console.log(`\nError Message:`);
+  console.log(`---------------\n`);
+  console.log("String or words cannot contain numbers, only letters, strings and words are allowed");
   console.log("\nYou've reached the end of the program, Goodbye.!")
   console.log("Program written in Javascript.")
   console.log("Exiting program now...")
@@ -81,7 +85,9 @@ if (str.match(/[0-9]/i)) {
 let shift = prompt('Enter shift number: ');
 // check if the shift number is empty or null
 if (shift == null || shift == " " || shift.length == 0) {
-  console.log("Error Message: Shift number cannot be parsed or empty");
+  console.log(`\nError Message:`);
+  console.log(`---------------\n`);
+  console.log("Shift number cannot be parsed or empty");
   console.log("\nYou've reached the end of the program, Goodbye.!")
   console.log("Program written in Javascript.")
   console.log("Exiting program now...")
@@ -92,7 +98,9 @@ if (shift == null || shift == " " || shift.length == 0) {
 
 //chck if the shift number contains letters or words, only numbers are allowed
 if (shift.match(/[a-z]/i)) {
-  console.log("Error Message: Shift number cannot contain letters or words, only numbers are allowed");
+  console.log(`\nError Message:`);
+  console.log(`---------------\n`);
+  console.log("Shift number cannot contain letters or words, only numbers are allowed");
   console.log("\nYou've reached the end of the program, Goodbye.!")
   console.log("Program written in Javascript.")
   console.log("Exiting program now...")
@@ -100,8 +108,8 @@ if (shift.match(/[a-z]/i)) {
   process.exit(0);
 }
 
-
-
+console.log(`\nOutput:`);
+console.log(`-------`);
 //check if string ends with a period
 if (str.endsWith(".")) {
   str = str.slice(0, -1);
@@ -111,7 +119,7 @@ if (str.endsWith(".")) {
   console.log("The Encrypted String is: ", cipher(str, shift));
 }
 
-
+// end of program
 console.log("\nYou've reached the end of the program, Goodbye.!")
 console.log("Program written in Javascript.")
 console.log("Exiting program now...")
